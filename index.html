@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qazal Abedini | Back-End Developer</title>
+
+    <!-- SEO & Meta -->
     <meta name="description" content="Professional portfolio of Qazal Abedini, Computer Engineering student and Back-End developer showcasing projects, technical skills, and practical experience.">
     <meta name="keywords" content="developer, portfolio, software engineer, web development , Back-end ,python, javascript">
+    <meta name="author" content="Qazal Abedini">
+    <meta property="og:title" content="Qazal Abedini | Back-End Developer">
+    <meta property="og:description" content="Backend Developer specializing in Python, Node.js, and PostgreSQL.">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -42,6 +49,9 @@
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans bg-light text-dark min-h-screen">
     <!-- Navigation -->
@@ -63,15 +73,15 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="py-20 md:py-32 bg-gradient-to-br from-white to-blue-50">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center animate-fade-in">
+    <section id="hero" class="py-20 md:py-32 min-h-screen relative">
+        <div class="container mx-auto px-4 flex justify-center items-center h-full">
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-10 max-w-3xl text-center animate-fade-in shadow-lg" style="margin-top: 40px;">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">Qazal Abedini</h1>
-                <div class="inline-flex items-center space-x-2 mb-6">
+                <div class="inline-flex items-center space-x-2 mb-6 justify-center">
                     <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                    <h2 class="text-2xl md:text-3xl text-gray-600 font-mono">Back-End Developer</h2>
+                    <h2 class="text-2xl md:text-3xl text-gray-700 font-mono">Back-End Developer</h2>
                 </div>
-                <p class="text-lg md:text-xl text-gray-500 mb-8 max-w-2xl mx-auto">
+                <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
                     Building scalable web applications with modern technologies. Passionate about clean code and user experience.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
@@ -96,8 +106,8 @@
                         <div class="relative">
                             <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl">
                                 <img 
-                                    src="https://picsum.photos/400?random=1" 
-                                    alt="Alex Morgan - Full Stack Developer" 
+                                    src="images/ghazal.jpg" 
+                                    alt="Qazal Abedini - Backend Developer" 
                                     class="w-full h-full object-cover"
                                     loading="lazy"
                                 />
@@ -110,10 +120,9 @@
                     <div class="animate-slide-up">
                         <h3 class="text-2xl font-semibold mb-4">Code. Learn. Grow</h3>
                         <p class="text-gray-600 mb-4">
-                             I'm a developer passionate about learning, building, and exploring new technologies.  
-                             I primarily work with Python, JavaScript, Node.js, PostgreSQL, and C, and I strive to 
-                             write clean, simple, and understandable code.  
-                             
+                            I'm a developer passionate about learning, building, and exploring new technologies.  
+                            I primarily work with Python, JavaScript, Node.js, PostgreSQL, and C, and I strive to 
+                            write clean, simple, and understandable code.  
                         </p>
                         <p class="text-gray-600 mb-6">
                             Currently, I am continuously improving my skills in software development and expanding my knowledge step by step.  
@@ -146,12 +155,61 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section (Ultra Clean / Minimal) -->
     <section id="skills" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Tech Stack & Skills</h2>
-            <div class="max-w-6xl mx-auto">
-                <!-- Skills will be dynamically generated here -->
+            <h2 class="text-3xl md:text-4xl font-bold mb-14 text-center">Tech Stack & Tools</h2>
+
+            <div class="flex flex-wrap justify-center gap-10">
+
+                <!-- Python -->
+                <div class="flex flex-col items-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"/>
+                    <span class="text-sm text-gray-600 group-hover:text-primary transition">Python</span>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="flex flex-col items-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"/>
+                    <span class="text-sm text-gray-600 group-hover:text-primary transition">JavaScript</span>
+                </div>
+
+                <!-- Node.js -->
+                <div class="flex flex-col items-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"/>
+                    <span class="text-sm text-gray-600 group-hover:text-primary transition">Node.js</span>
+                </div>
+
+                <!-- PostgreSQL -->
+                <div class="flex flex-col items-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"/>
+                    <span class="text-sm text-gray-600 group-hover:text-primary transition">PostgreSQL</span>
+                </div>
+
+                <!-- SQL Server -->
+                <div class="flex flex-col items-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"/>
+                    <span class="text-sm text-gray-600 group-hover:text-primary transition">SQL Server</span>
+                </div>
+
+                <!-- C -->
+                <div class="flex flex-col items-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"/>
+                    <span class="text-sm text-gray-600 group-hover:text-primary transition">C</span>
+                </div>
+
+                <!-- Git -->
+                <div class="flex flex-col items-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"/>
+                    <span class="text-sm text-gray-600 group-hover:text-primary transition">Git</span>
+                </div>
+
+                <!-- GitHub -->
+                <div class="flex flex-col items-center group">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-14 h-14 mb-3 transition duration-300 group-hover:scale-110"/>
+                    <span class="text-sm text-gray-600 group-hover:text-primary transition">GitHub</span>
+                </div>
+
             </div>
         </div>
     </section>
@@ -160,42 +218,45 @@
     <section id="contact" class="py-20 bg-gradient-to-br from-blue-50 to-white">
         <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto">
+
                 <h2 class="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
-                <form id="contactForm" class="space-y-6 bg-white p-8 rounded-xl shadow-lg">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                        <input type="text" id="name" name="name" required 
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                        <input type="email" id="email" name="email" required 
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5" required 
-                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"></textarea>
-                    </div>
-                    <button type="submit" 
-                            class="w-full px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-md">
-                        Send Message
-                    </button>
-                </form>
+
+                <!-- Social Links Only -->
                 <div class="mt-12 text-center">
-                    <p class="text-gray-600 mb-6">Or connect with me directly:</p>
-                    <div class="flex justify-center space-x-6">
-                        <a href="https://github.com/ghazal1383ab" class="text-gray-600 hover:text-primary transition-colors" title="GitHub">
-                            <i class="fab fa-github text-2xl"></i>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Connect with me directly:
+                    </p>
+
+                    <div class="flex justify-center space-x-10">
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/ghazal1383ab"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-gray-600 hover:text-primary transition-all duration-300 hover:scale-110"
+                           title="GitHub">
+                            <i class="fab fa-github text-4xl"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/qazal-abedini-181800308/" class="text-gray-600 hover:text-primary transition-colors" title="LinkedIn">
-                            <i class="fab fa-linkedin text-2xl"></i>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/qazal-abedini-181800308/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-gray-600 hover:text-primary transition-all duration-300 hover:scale-110"
+                           title="LinkedIn">
+                            <i class="fab fa-linkedin text-4xl"></i>
                         </a>
-                        <a href="mailto:qazalabedini02@gmail.com" class="text-gray-600 hover:text-primary transition-colors" title="Email">
-                            <i class="fas fa-envelope text-2xl"></i>
+
+                        <!-- Email -->
+                        <a href="mailto:qazalabedini02@gmail.com"
+                           class="text-gray-600 hover:text-primary transition-all duration-300 hover:scale-110"
+                           title="Email">
+                            <i class="fas fa-envelope text-4xl"></i>
                         </a>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -223,99 +284,46 @@
     </footer>
 
     <script>
-        // Define all data at the beginning
+        // Projects data
         const projects = [
             {
                 "id": 1,
-                "title": "E-Commerce Platform",
-                "description": "A full-featured online shopping platform with real-time inventory management and payment processing.",
-                "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
-                "github": "https://github.com/username/ecommerce-platform",
-                "image": "https://picsum.photos/400/250?random=2"
+                "title": "Python Tkinter Calculator",
+                "description": "A simple and user-friendly calculator built with Python and Tkinter.",
+                "technologies": ["Python","Tkinter (GUI)"],
+                "github": "https://github.com/ghazal1383ab/Python-Tkinter-Calculator-App",
+                "image": "images/caculator.png"
             },
             {
                 "id": 2,
-                "title": "Task Management App",
-                "description": "Collaborative project management tool with drag-and-drop interface and team collaboration features.",
-                "technologies": ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
-                "github": "https://github.com/username/task-manager",
-                "image": "https://picsum.photos/400/250?random=3"
+                "title": "Simple Finance Dashboard",
+                "description": "A simple and efficient Streamlit-based finance tool that allows you to upload your bank transaction CSV file and automatically categorize your expenses",
+                "technologies": ["Python", "Streamlit", "Pandas", "Plotly", "JSON"],
+                "github": "https://github.com/ghazal1383ab/Simple-Finance-Dashboard",
+                "image": "images/finance.png"
             },
             {
                 "id": 3,
-                "title": "Weather Dashboard",
-                "description": "Real-time weather application with location-based forecasts and interactive maps.",
-                "technologies": ["JavaScript", "OpenWeather API", "Chart.js", "Leaflet"],
-                "github": "https://github.com/username/weather-dashboard",
-                "image": "https://picsum.photos/400/250?random=4"
+                "title": "Smart Urban Transport DB",
+                "description": "Smart Urban Transportation Management System with PostgreSQL schema, sample data, and queries for learning and testing",
+                "technologies": ["PostgreSQL"],
+                "github": "https://github.com/ghazal1383ab/Smart-Urban-Transport-DB",
+                "image": "images/db.png"
             },
             {
                 "id": 4,
                 "title": "Blog CMS",
-                "description": "Content management system for bloggers with markdown support and SEO optimization.",
-                "technologies": ["Next.js", "TypeScript", "Prisma", "AWS"],
-                "github": "https://github.com/username/blog-cms",
-                "image": "https://picsum.photos/400/250?random=5"
-            },
-            {
-                "id": 5,
-                "title": "Fitness Tracker",
-                "description": "Mobile-first fitness application with workout planning and progress tracking.",
-                "technologies": ["React Native", "Firebase", "Redux", "Expo"],
-                "github": "https://github.com/username/fitness-tracker",
-                "image": "https://picsum.photos/400/250?random=6"
-            },
-            {
-                "id": 6,
-                "title": "AI Chat Assistant",
-                "description": "Intelligent chatbot with natural language processing and custom knowledge base.",
-                "technologies": ["Python", "FastAPI", "OpenAI API", "Redis"],
-                "github": "https://github.com/username/ai-chat",
-                "image": "https://picsum.photos/400/250?random=7"
+                "description": "Personal portfolio website showcasing my projects, technical skills, and experience as a Back-End Developer",
+                "technologies": ["HTML", "CSS", "JavaScript"],
+                "github": "https://github.com/ghazal1383ab/ghazal1383ab.github.io",
+                "image": "images/Portfolio.png"
             }
         ];
 
-        const skills = [
-            {
-                "category": "Frontend",
-                "items": [
-                    { "name": "React", "level": 95 },
-                    { "name": "Vue.js", "level": 85 },
-                    { "name": "TypeScript", "level": 90 },
-                    { "name": "Tailwind CSS", "level": 95 },
-                    { "name": "Next.js", "level": 88 }
-                ]
-            },
-            {
-                "category": "Backend",
-                "items": [
-                    { "name": "Node.js", "level": 92 },
-                    { "name": "Python", "level": 85 },
-                    { "name": "Express", "level": 90 },
-                    { "name": "PostgreSQL", "level": 88 },
-                    { "name": "MongoDB", "level": 85 }
-                ]
-            },
-            {
-                "category": "Tools & DevOps",
-                "items": [
-                    { "name": "Git", "level": 95 },
-                    { "name": "Docker", "level": 80 },
-                    { "name": "AWS", "level": 75 },
-                    { "name": "CI/CD", "level": 85 },
-                    { "name": "Testing", "level": 90 }
-                ]
-            }
-        ];
-
-        // Utility functions
         function scrollToSection(sectionId) {
             const element = document.getElementById(sectionId);
             if (element) {
-                window.scrollTo({
-                    top: element.offsetTop - 80,
-                    behavior: 'smooth'
-                });
+                window.scrollTo({ top: element.offsetTop - 80, behavior: 'smooth' });
             }
         }
 
@@ -323,95 +331,28 @@
             return `
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 animate-slide-up">
                     <div class="h-48 overflow-hidden">
-                        <img 
-                            src="${project.image}" 
-                            alt="${project.title}" 
-                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
-                        />
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"/>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">${project.title}</h3>
                         <p class="text-gray-600 mb-4">${project.description}</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            ${project.technologies.map(tech => 
-                                `<span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">${tech}</span>`
-                            ).join('')}
+                            ${project.technologies.map(tech => `<span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">${tech}</span>`).join('')}
                         </div>
-                        <a href="${project.github}" 
-                           target="_blank" 
-                           class="inline-flex items-center text-primary hover:text-secondary transition-colors">
-                            <i class="fab fa-github mr-2"></i>
-                            View on GitHub
+                        <a href="${project.github}" target="_blank" class="inline-flex items-center text-primary hover:text-secondary transition-colors">
+                            <i class="fab fa-github mr-2"></i>View on GitHub
                         </a>
                     </div>
                 </div>
             `;
         }
 
-        function createSkillCategory(category) {
-            return `
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <h3 class="text-xl font-semibold mb-4 text-primary">${category.category}</h3>
-                    <div class="space-y-4">
-                        ${category.items.map(skill => `
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="font-medium">${skill.name}</span>
-                                    <span class="text-primary">${skill.level}%</span>
-                                </div>
-                                <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-primary rounded-full transition-all duration-500" 
-                                         style="width: ${skill.level}%"></div>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            `;
-        }
-
-        // Initialize page content
         document.addEventListener('DOMContentLoaded', function() {
-            // Render projects
             const projectsContainer = document.querySelector('#projects .grid');
-            if (projectsContainer) {
-                projectsContainer.innerHTML = projects.map(createProjectCard).join('');
-            }
+            if (projectsContainer) projectsContainer.innerHTML = projects.map(createProjectCard).join('');
 
-            // Render skills
-            const skillsContainer = document.querySelector('#skills .max-w-6xl');
-            if (skillsContainer) {
-                skillsContainer.innerHTML = `
-                    <div class="grid md:grid-cols-3 gap-8">
-                        ${skills.map(createSkillCategory).join('')}
-                    </div>
-                `;
-            }
-
-            // Handle contact form submission
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Get form data
-                    const formData = new FormData(this);
-                    const data = Object.fromEntries(formData);
-                    
-                    // In a real application, you would send this to a server
-                    console.log('Form submitted:', data);
-                    
-                    // Show success message
-                    alert('Thank you for your message! I will get back to you soon.');
-                    this.reset();
-                });
-            }
-
-            // Mobile menu toggle
             const mobileMenuButton = document.querySelector('button.md\\:hidden');
             const navLinks = document.querySelector('.hidden.md\\:flex');
-            
             if (mobileMenuButton) {
                 mobileMenuButton.addEventListener('click', function() {
                     navLinks.classList.toggle('hidden');
@@ -428,27 +369,13 @@
                 });
             }
 
-            // Animate elements on scroll
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
+            const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-fade-in');
-                    }
-                });
+                entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('animate-fade-in'); });
             }, observerOptions);
-
-            // Observe all sections
-            document.querySelectorAll('section').forEach(section => {
-                observer.observe(section);
-            });
+            document.querySelectorAll('section').forEach(section => observer.observe(section));
         });
 
-        // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -456,6 +383,23 @@
                 scrollToSection(targetId);
             });
         });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+      el: "#hero",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xe5e5f0,
+      backgroundColor: 0x7c8fed
+    });
     </script>
 </body>
 </html>
